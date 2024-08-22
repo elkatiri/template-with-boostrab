@@ -1,0 +1,164 @@
+
+/* start the head */
+.header {
+    background-image: url(img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 130vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img{
+    width:300px;
+}
+.special-head {
+    font-family: serif;
+    font-style: italic;
+}
+
+.second-head {
+    font-size: 5rem;
+}
+
+.big-marj {
+    margin-top: 8rem;
+}
+/* start portfolio*/
+.prtf {
+    position: relative;
+}
+.prtf i{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+    color:#f2f207;
+    z-index: 2;
+    display: none;
+}.prtf:hover i{
+    display: flex;
+    cursor: pointer;
+}
+.card:hover .card-img-top{
+    filter: opacity(0.7);
+}
+/* start about */
+.img-container {
+    position: relative;
+    width: 500px;
+    height: 150px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    width:4px;
+    border-radius: 3px;
+    min-height:145px;
+    left:50%;
+    top:100%;
+    background-color: #f2f207;
+    z-index: 2024;
+}
+
+/* start contact */
+.contact{
+    background-image:url(img/maap.jpeg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:fit-content;
+}
+/* end contact */
+@media only screen and (max-width:428px) {
+    body>div>div>div.btn.btn-head.btn-warning.mb-2.text-white.fs-5.fw-bold.py-3.px-5 {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 16px !important;
+        margin: 0.5rem !important;
+    }
+    body>div>nav>div>img{
+        width:150px!important;
+    }
+    .nav-item, #navbarSupportedContent>ul{
+        padding:0px!important;
+        margin: 10px 0!important;
+    }
+         /* portfolio */
+    .card {
+        width: 12rem!important;
+    }
+    /* about */
+        .img-container::after {
+            content: "";
+            position: absolute;
+            width: 4px;
+            border-radius: 3px;
+            min-height: 246px;
+            left: 50%;
+            top: 100%;
+            background-color: #f2f207;
+            z-index: 2024;
+        }
+
+}
+@media only screen and (max-width: 769px) {
+    .navbar-toggler {
+        background-color: #fff !important;
+        border-radius: 3px !important;
+    }
+
+    nav {
+        background-color: rgb(37, 36, 36);
+        position: fixed;
+    }
+
+    .big-marj {
+        margin-top: 2rem !important;
+        ;
+    }
+
+    .second-head {
+        font-size: 2rem !important;
+    }
+        body>div>nav>div{
+            margin: .5rem!important;
+        }
+    .nav-item:hover{
+        background-color: rgb(19, 18, 18);
+        border-bottom: 1px solid #fff;
+    }
+    /* portfolio */
+    .card{
+        width:13rem!important;
+        margin:0 auto;
+    }
+    
+
+}
+
+@media only screen and (max-width:1025px) {
+    .big-marj {
+        margin-top: 4rem !important;
+    }
+    /* about */
+        .img-container::after {
+            content: "";
+            position: absolute;
+            width: 4px;
+            border-radius: 3px;
+            min-height: 158px;
+            left: 50%;
+            top: 100%;
+            background-color: #f2f207;
+            z-index: 2024;
+        }
+    
+
+}
